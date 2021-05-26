@@ -15,18 +15,21 @@ Para visualizar os passos dos cenários acima basta clicar no link abaixo:
   
 <h3>2 - Orientações para execução do teste</h3>
  
-O teste foi criado utilizando o IDE Atom com Robot Framework e Selenium (necessário instalar as libraries para executar).
+O teste foi criado utilizando o IDE Atom, Robot Framework, Selenium e Pyton.
 
 Para executá-lo realize os seguintes passos:
 
-<li>Abra o Atom
+<li>Abra/instale o Atom
 <li>Importe o projeto deste repositório  
 <li>Instale o pacote platformio-ide-terminal em ATOM > Packages > Settings View > Install Packages/Themes
 <li>Vá no Settings do plugin, no campo Shell Override e cole o diretório do seu shell preferido, no meu caso foi C:\Windows\system32\cmd.exe.
 <li>Reinicie o Atom
-<li>Instale o driver do Firefox (geckodriver), e configure de acordo com seu sistema operacional
+<li>Instale o driver do Firefox (geckodriver) e configure de acordo com seu sistema operacional
+<li>Instale o Pacote do Robot Framework
+<li>Instale a library SeleniumLibrary
+<li>Instale o Pyton
 <li>Dentro do Atom, clique no +, localizado no canto esquerdo da tela (rodapé)
 <li>Cole a seguinte linha de comando e pressione ENTER para executar: robot -d ./results tests\SuiteSegfyTrialBDD.robot
- 
+
 <h3>3 - Vídeo da execução local</h3>
 <li><a href="https://github.com/bsmuller/testeRobot/blob/master/tests/SuiteSegfyTrialBDD.robot" rel="nofollow">xalala</a>
