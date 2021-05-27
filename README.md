@@ -32,4 +32,4 @@ Para executá-lo realize os seguintes passos:
 <li>Cole a seguinte linha de comando e pressione ENTER para executar: robot -d ./results tests\SuiteSegfyTrialBDD.robot
 
 <h3>3 - Vídeo da execução local</h3>
-<li><a href="https://github.com/bsmuller/testeRobot/blob/master/tests/SuiteSegfyTrialBDD.robot" rel="nofollow">xalala</a>
+<li>Video está em anexo ao e-mail enviado ao Cleber
