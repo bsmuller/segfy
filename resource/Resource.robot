@@ -39,25 +39,26 @@ Então clico no botão para iniciar a avaliação de 7 dias
 Quando clicar na opção de login
   Click Element    id=hs-eu-confirmation-button
   Click Element    id=cphMaster_hplLogin
+  Sleep    10
 E preencho o e-mail com ${EMAILLOGIN}
   Input Text    id=__BVID__16    ${EMAILLOGIN}
 E preencho a senha com ${SENHALOGIN}
   Input Text    id=__BVID__19    ${SENHALOGIN}
 E acessar a página de teste
   Click Element    xpath=//button[contains(.,'Entrar')]
+  Sleep    15
+  Wait Until Element Is Visible  xpath=//button[contains(.,'×')]
   Click Element    xpath=//button[contains(.,'×')]
+  Wait Until Element Is Not Visible  xpath=//button[contains(.,'×')]
   Title Should Be  Segfy.com - Home
 E clicar no link Assine já o sistema
   Click Element    xpath=//a[contains(text(),'Assine já o sistema!')]
-  Title Should Be  Segfy.com - Nova Assinatura
-  Sleep    30
-#Então me torno um cliente do sistema
-#  Click Element    id=ContentPlaceHolderMaster_CphMasterAutenticado_btnContratar
-#  Element Text Should Be  css=.col-sm-12 > h4  Dados de cobrança
-#  Input Text    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtCpfCnpj  570.503.860-73
-#  Input Text    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtCep  93285-480
-#  Click Element    css=.fa-search
-# Element Attribute Value Should Be    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtUf  RS
-#  Element Attribute Value Should Be    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtCidade  Esteio
-#  Click Element    id=ContentPlaceHolderMaster_CphMasterAutenticado_btnAssinar
-#  Element Text Should Be  css=p:nth-child(2)  Suas informações foram atualizadas
+  Sleep   20
+Então me torno um cliente do sistema
+  Click Element    id=ContentPlaceHolderMaster_CphMasterAutenticado_btnContratar
+  Element Text Should Be  xpath=//h4[contains(.,'Dados de cobrança')]  Dados de cobrança
+  Sleep    15
+  Input Text    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtCpfCnpj  570.503.860-73
+  Input Text    id=ContentPlaceHolderMaster_CphMasterAutenticado_informacoesCobranca_txtCep  93285-480
+  Sleep    45
+© 2021 GitHub, Inc.
